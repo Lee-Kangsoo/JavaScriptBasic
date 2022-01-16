@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script async src="1_class.js"></script>
+    <!-- <script defer src="2_data_type.js"></script> -->
+    <!-- <script defer src="3_operator_function.js"></script> -->
+    <!-- <script defer src="4_function.js"></script> -->
+</head>
+<body>
+</body>
+</html>
+
+
+<!--
+1. script put into <head> tag
+    fetching and excuting js is blocking html parsing
+2. script put into <body> tag,
+    Page is ready before fetching, but interaction between js is too slow
+3. script put into <head> tag with "async"
+    js fetching is loaded parallely with parsing.
+    but excuting js is blocking parsing parsing html
+
+4. script put into <head> tag with "defer"
+    js fetching is loaded parallely with parsing.
+    and page is ready first and then excuting js.
+
+--- script put into the <head> tag with "defer" is the best practice
+-->
