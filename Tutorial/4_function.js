@@ -145,22 +145,16 @@ function calculate(command , a , b){
     switch(command){
         case 'add':
             return a + b;
-            break;
         case 'substract':
             return a - b;
-            break;
         case 'multiply':
             return a * b;
-            break;
         case 'divide':
             return a / b;
-            break;
         case 'remainder':
             return a % b;
-            break;
         default:
-            alert('calculate function is not appropriated');
-            break;
+            throw Error('calculate function is not appropriated');
     }
 }
 
