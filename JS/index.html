@@ -5,6 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style> 
+        :root {
+            --ti-cursor-marging-left: 10em;
+            --ti-cursor-color: dodgerblue;
+        }
+    </style>
     <!-- <script defer src="1_class.js"></script> -->
     <!-- <script defer src="2_data_type.js"></script> -->
     <!-- <script defer src="3_operator_function.js"></script> -->
@@ -17,9 +23,20 @@
     <!-- <script defer src="8_json.js"></script> -->
     <!-- <script defer src="async/11_async_await.js"></script> -->
     <!-- <script defer src="12_function_basic.js"></script> -->
+    <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
     <script defer src="13_summary.js"></script>
 </head>
 <body>
+    <h1 id="title"> DreamCoding Youtube</h1>
+    <script>
+        document.addEventListener("DOMContentLoaded" , () =>{
+            new TypeIt('#title')
+            .pause(1000)
+            .delete(7 , {deley : 1000})
+            .type('academy')
+            .go()
+        })
+    </script>
 </body>
 </html>
 
